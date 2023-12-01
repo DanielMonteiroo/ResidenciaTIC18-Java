@@ -12,8 +12,7 @@ Existem dois tipos principais de exceções em Java: exceções verificadas (che
 e exceções não verificadas (unchecked exceptions).
 
 
-# 2. Pesquise sobre a diferença entre exceções verificadas e não verificadas em
-Java. Dê exemplos de cada uma. 
+# 2. Pesquise sobre a diferença entre exceções verificadas e não verificadas em Java. Dê exemplos de cada uma. 
 
 R: Exceções Verificadas:
 São exceções que o compilador obriga o programador a lidar explicitamente.
@@ -49,8 +48,7 @@ public class ExemploUncheckedException {
 }
 
 
-# 3. Como você pode lidar com exceções em Java? Quais são as palavras-chave e
-as práticas comuns para tratamento de exceções? 
+# 3. Como você pode lidar com exceções em Java? Quais são as palavras-chave e as práticas comuns para tratamento de exceções? 
 
 R: Em Java, o tratamento de exceções é realizado por meio de blocos try, catch, finally, e opcionalmente, 
 throws nas assinaturas de métodos. 
@@ -69,8 +67,7 @@ Pode haver vários blocos catch para tratar diferentes tipos de exceções.
 * Para recursos que implementam a interface AutoCloseable (como FileInputStream, Socket, etc.),
 * você pode usar o bloco try-with-resources para garantir que os recursos sejam fechados corretamente.
 
-# 4. O que é o bloco "try-catch" em Java? Como ele funciona e por que é
-importante usá-lo ao lidar com exceções? 
+# 4. O que é o bloco "try-catch" em Java? Como ele funciona e por que é importante usá-lo ao lidar com exceções? 
 
 R: O bloco try-catch em Java é uma construção utilizada para lidar com exceções, 
 que são eventos anormais ou erros que podem ocorrer durante a execução de um programa. 
@@ -91,9 +88,7 @@ Em vez de o programa terminar devido a uma exceção não tratada, você pode fo
 
 * Facilitação de depuração: O bloco catch fornece um local centralizado para lidar com exceções, facilitando a depuração e a identificação de problemas no código.
 
-* # 5. Quando é apropriado criar suas próprias exceções personalizadas em Java e
-como você pode fazer isso? Dê um exemplo de quando e por que você criaria
-uma exceção personalizada. 
+* # 5. Quando é apropriado criar suas próprias exceções personalizadas em Java e como você pode fazer isso? Dê um exemplo de quando e por que você criaria uma exceção personalizada. 
 
 R: Criar suas próprias exceções personalizadas em Java é apropriado quando você precisa representar erros ou situações específicas
 ao domínio do seu aplicativo que não são adequadamente cobertos pelas exceções padrão do Java. 
@@ -101,6 +96,7 @@ Isso ajuda a tornar seu código mais claro, expressivo e a facilitar o tratament
 A criação de uma exceção personalizada em Java envolve a criação de uma classe que estende a classe Exception ou uma de suas subclasses, como RuntimeException. 
 
 exemplo: 
+
 public class MeuErroPersonalizado extends Exception {
     public MeuErroPersonalizado() {
         super("Este é um erro personalizado!");
