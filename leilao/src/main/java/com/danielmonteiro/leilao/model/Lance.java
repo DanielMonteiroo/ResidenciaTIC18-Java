@@ -10,6 +10,8 @@ public class Lance {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+
+	@ManyToOne
 	private Leilao leilao;
 	private double valor;
 	
